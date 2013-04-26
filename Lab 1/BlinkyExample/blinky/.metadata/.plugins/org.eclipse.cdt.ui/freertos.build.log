@@ -1,0 +1,7 @@
+15:06:36 **** Clean-only build of configuration Debug for project freertos ****
+make clean 
+rm -rf  ./src/freertos_main.o  ./freertos/src/croutine.o ./freertos/src/list.o ./freertos/src/queue.o ./freertos/src/tasks.o  ./freertos/port/memmang/heap_2.o  ./freertos/port/lpcxpresso/m0/port.o  ./driver/can.o ./driver/crp.o ./driver/debug_printf.o ./driver/small_gpio.o  ./config/freertos_cr_startup_lpc11.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./src/freertos_main.d  ./freertos/src/croutine.d ./freertos/src/list.d ./freertos/src/queue.d ./freertos/src/tasks.d  ./freertos/port/memmang/heap_2.d  ./freertos/port/lpcxpresso/m0/port.d  ./driver/can.d ./driver/crp.d ./driver/debug_printf.d ./driver/small_gpio.d  ./config/freertos_cr_startup_lpc11.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  freertos.axf
+ 
+
+15:06:38 Build Finished (took 1s.961ms)
+

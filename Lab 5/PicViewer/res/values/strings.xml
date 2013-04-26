@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PicViewer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="x_label">X:</string>
+    <string name="y_label">Y:</string>
+    <string name="z_label">Z:</string>
+
+</resources>

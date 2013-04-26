@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;textX&apos; in &apos;com.example.picviewer.R.id&apos; to &apos;mainBox&apos;&#x0D;&#x0A;- Original project: &apos;PicViewer&apos;&#x0D;&#x0A;- Original element: &apos;com.example.picviewer.R.id.textX&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.picviewer.R.id.mainBox&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;textX&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.example.picviewer{R.java[R[id^textX" name="mainBox" references="true" setter="false" stamp="1363893791031" textual="false" version="1.0"/>
+</session>

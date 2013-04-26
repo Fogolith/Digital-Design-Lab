@@ -1,0 +1,415 @@
+Simulator report for DES
+Tue Jan 22 14:55:56 2013
+Quartus II Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 68 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                          ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                        ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                     ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                           ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                            ;               ;
+; Vector input source                                                                        ; //eces172.colorado.edu/pravecek/win7folders/Desktop/ECEN 3000/DES/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                             ; On            ;
+; Check outputs                                                                              ; Off                                                                            ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                             ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                             ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                             ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                            ; Off           ;
+; Detect glitches                                                                            ; Off                                                                            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                            ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                           ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                                      ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                                      ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 68           ;
+; Total output ports checked                          ; 64           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 64           ;
+; Total output ports with no 1-value coverage         ; 64           ;
+; Total output ports with no 0-value coverage         ; 64           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |DES|encrypt_text[0]  ; |DES|encrypt_text[0]  ; pin_out          ;
+; |DES|encrypt_text[1]  ; |DES|encrypt_text[1]  ; pin_out          ;
+; |DES|encrypt_text[2]  ; |DES|encrypt_text[2]  ; pin_out          ;
+; |DES|encrypt_text[3]  ; |DES|encrypt_text[3]  ; pin_out          ;
+; |DES|encrypt_text[4]  ; |DES|encrypt_text[4]  ; pin_out          ;
+; |DES|encrypt_text[5]  ; |DES|encrypt_text[5]  ; pin_out          ;
+; |DES|encrypt_text[6]  ; |DES|encrypt_text[6]  ; pin_out          ;
+; |DES|encrypt_text[7]  ; |DES|encrypt_text[7]  ; pin_out          ;
+; |DES|encrypt_text[8]  ; |DES|encrypt_text[8]  ; pin_out          ;
+; |DES|encrypt_text[9]  ; |DES|encrypt_text[9]  ; pin_out          ;
+; |DES|encrypt_text[10] ; |DES|encrypt_text[10] ; pin_out          ;
+; |DES|encrypt_text[11] ; |DES|encrypt_text[11] ; pin_out          ;
+; |DES|encrypt_text[12] ; |DES|encrypt_text[12] ; pin_out          ;
+; |DES|encrypt_text[13] ; |DES|encrypt_text[13] ; pin_out          ;
+; |DES|encrypt_text[14] ; |DES|encrypt_text[14] ; pin_out          ;
+; |DES|encrypt_text[15] ; |DES|encrypt_text[15] ; pin_out          ;
+; |DES|encrypt_text[16] ; |DES|encrypt_text[16] ; pin_out          ;
+; |DES|encrypt_text[17] ; |DES|encrypt_text[17] ; pin_out          ;
+; |DES|encrypt_text[18] ; |DES|encrypt_text[18] ; pin_out          ;
+; |DES|encrypt_text[19] ; |DES|encrypt_text[19] ; pin_out          ;
+; |DES|encrypt_text[20] ; |DES|encrypt_text[20] ; pin_out          ;
+; |DES|encrypt_text[21] ; |DES|encrypt_text[21] ; pin_out          ;
+; |DES|encrypt_text[22] ; |DES|encrypt_text[22] ; pin_out          ;
+; |DES|encrypt_text[23] ; |DES|encrypt_text[23] ; pin_out          ;
+; |DES|encrypt_text[24] ; |DES|encrypt_text[24] ; pin_out          ;
+; |DES|encrypt_text[25] ; |DES|encrypt_text[25] ; pin_out          ;
+; |DES|encrypt_text[26] ; |DES|encrypt_text[26] ; pin_out          ;
+; |DES|encrypt_text[27] ; |DES|encrypt_text[27] ; pin_out          ;
+; |DES|encrypt_text[28] ; |DES|encrypt_text[28] ; pin_out          ;
+; |DES|encrypt_text[29] ; |DES|encrypt_text[29] ; pin_out          ;
+; |DES|encrypt_text[30] ; |DES|encrypt_text[30] ; pin_out          ;
+; |DES|encrypt_text[31] ; |DES|encrypt_text[31] ; pin_out          ;
+; |DES|encrypt_text[32] ; |DES|encrypt_text[32] ; pin_out          ;
+; |DES|encrypt_text[33] ; |DES|encrypt_text[33] ; pin_out          ;
+; |DES|encrypt_text[34] ; |DES|encrypt_text[34] ; pin_out          ;
+; |DES|encrypt_text[35] ; |DES|encrypt_text[35] ; pin_out          ;
+; |DES|encrypt_text[36] ; |DES|encrypt_text[36] ; pin_out          ;
+; |DES|encrypt_text[37] ; |DES|encrypt_text[37] ; pin_out          ;
+; |DES|encrypt_text[38] ; |DES|encrypt_text[38] ; pin_out          ;
+; |DES|encrypt_text[39] ; |DES|encrypt_text[39] ; pin_out          ;
+; |DES|encrypt_text[40] ; |DES|encrypt_text[40] ; pin_out          ;
+; |DES|encrypt_text[41] ; |DES|encrypt_text[41] ; pin_out          ;
+; |DES|encrypt_text[42] ; |DES|encrypt_text[42] ; pin_out          ;
+; |DES|encrypt_text[43] ; |DES|encrypt_text[43] ; pin_out          ;
+; |DES|encrypt_text[44] ; |DES|encrypt_text[44] ; pin_out          ;
+; |DES|encrypt_text[45] ; |DES|encrypt_text[45] ; pin_out          ;
+; |DES|encrypt_text[46] ; |DES|encrypt_text[46] ; pin_out          ;
+; |DES|encrypt_text[47] ; |DES|encrypt_text[47] ; pin_out          ;
+; |DES|encrypt_text[48] ; |DES|encrypt_text[48] ; pin_out          ;
+; |DES|encrypt_text[49] ; |DES|encrypt_text[49] ; pin_out          ;
+; |DES|encrypt_text[50] ; |DES|encrypt_text[50] ; pin_out          ;
+; |DES|encrypt_text[51] ; |DES|encrypt_text[51] ; pin_out          ;
+; |DES|encrypt_text[52] ; |DES|encrypt_text[52] ; pin_out          ;
+; |DES|encrypt_text[53] ; |DES|encrypt_text[53] ; pin_out          ;
+; |DES|encrypt_text[54] ; |DES|encrypt_text[54] ; pin_out          ;
+; |DES|encrypt_text[55] ; |DES|encrypt_text[55] ; pin_out          ;
+; |DES|encrypt_text[56] ; |DES|encrypt_text[56] ; pin_out          ;
+; |DES|encrypt_text[57] ; |DES|encrypt_text[57] ; pin_out          ;
+; |DES|encrypt_text[58] ; |DES|encrypt_text[58] ; pin_out          ;
+; |DES|encrypt_text[59] ; |DES|encrypt_text[59] ; pin_out          ;
+; |DES|encrypt_text[60] ; |DES|encrypt_text[60] ; pin_out          ;
+; |DES|encrypt_text[61] ; |DES|encrypt_text[61] ; pin_out          ;
+; |DES|encrypt_text[62] ; |DES|encrypt_text[62] ; pin_out          ;
+; |DES|encrypt_text[63] ; |DES|encrypt_text[63] ; pin_out          ;
++-----------------------+-----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |DES|encrypt_text[0]  ; |DES|encrypt_text[0]  ; pin_out          ;
+; |DES|encrypt_text[1]  ; |DES|encrypt_text[1]  ; pin_out          ;
+; |DES|encrypt_text[2]  ; |DES|encrypt_text[2]  ; pin_out          ;
+; |DES|encrypt_text[3]  ; |DES|encrypt_text[3]  ; pin_out          ;
+; |DES|encrypt_text[4]  ; |DES|encrypt_text[4]  ; pin_out          ;
+; |DES|encrypt_text[5]  ; |DES|encrypt_text[5]  ; pin_out          ;
+; |DES|encrypt_text[6]  ; |DES|encrypt_text[6]  ; pin_out          ;
+; |DES|encrypt_text[7]  ; |DES|encrypt_text[7]  ; pin_out          ;
+; |DES|encrypt_text[8]  ; |DES|encrypt_text[8]  ; pin_out          ;
+; |DES|encrypt_text[9]  ; |DES|encrypt_text[9]  ; pin_out          ;
+; |DES|encrypt_text[10] ; |DES|encrypt_text[10] ; pin_out          ;
+; |DES|encrypt_text[11] ; |DES|encrypt_text[11] ; pin_out          ;
+; |DES|encrypt_text[12] ; |DES|encrypt_text[12] ; pin_out          ;
+; |DES|encrypt_text[13] ; |DES|encrypt_text[13] ; pin_out          ;
+; |DES|encrypt_text[14] ; |DES|encrypt_text[14] ; pin_out          ;
+; |DES|encrypt_text[15] ; |DES|encrypt_text[15] ; pin_out          ;
+; |DES|encrypt_text[16] ; |DES|encrypt_text[16] ; pin_out          ;
+; |DES|encrypt_text[17] ; |DES|encrypt_text[17] ; pin_out          ;
+; |DES|encrypt_text[18] ; |DES|encrypt_text[18] ; pin_out          ;
+; |DES|encrypt_text[19] ; |DES|encrypt_text[19] ; pin_out          ;
+; |DES|encrypt_text[20] ; |DES|encrypt_text[20] ; pin_out          ;
+; |DES|encrypt_text[21] ; |DES|encrypt_text[21] ; pin_out          ;
+; |DES|encrypt_text[22] ; |DES|encrypt_text[22] ; pin_out          ;
+; |DES|encrypt_text[23] ; |DES|encrypt_text[23] ; pin_out          ;
+; |DES|encrypt_text[24] ; |DES|encrypt_text[24] ; pin_out          ;
+; |DES|encrypt_text[25] ; |DES|encrypt_text[25] ; pin_out          ;
+; |DES|encrypt_text[26] ; |DES|encrypt_text[26] ; pin_out          ;
+; |DES|encrypt_text[27] ; |DES|encrypt_text[27] ; pin_out          ;
+; |DES|encrypt_text[28] ; |DES|encrypt_text[28] ; pin_out          ;
+; |DES|encrypt_text[29] ; |DES|encrypt_text[29] ; pin_out          ;
+; |DES|encrypt_text[30] ; |DES|encrypt_text[30] ; pin_out          ;
+; |DES|encrypt_text[31] ; |DES|encrypt_text[31] ; pin_out          ;
+; |DES|encrypt_text[32] ; |DES|encrypt_text[32] ; pin_out          ;
+; |DES|encrypt_text[33] ; |DES|encrypt_text[33] ; pin_out          ;
+; |DES|encrypt_text[34] ; |DES|encrypt_text[34] ; pin_out          ;
+; |DES|encrypt_text[35] ; |DES|encrypt_text[35] ; pin_out          ;
+; |DES|encrypt_text[36] ; |DES|encrypt_text[36] ; pin_out          ;
+; |DES|encrypt_text[37] ; |DES|encrypt_text[37] ; pin_out          ;
+; |DES|encrypt_text[38] ; |DES|encrypt_text[38] ; pin_out          ;
+; |DES|encrypt_text[39] ; |DES|encrypt_text[39] ; pin_out          ;
+; |DES|encrypt_text[40] ; |DES|encrypt_text[40] ; pin_out          ;
+; |DES|encrypt_text[41] ; |DES|encrypt_text[41] ; pin_out          ;
+; |DES|encrypt_text[42] ; |DES|encrypt_text[42] ; pin_out          ;
+; |DES|encrypt_text[43] ; |DES|encrypt_text[43] ; pin_out          ;
+; |DES|encrypt_text[44] ; |DES|encrypt_text[44] ; pin_out          ;
+; |DES|encrypt_text[45] ; |DES|encrypt_text[45] ; pin_out          ;
+; |DES|encrypt_text[46] ; |DES|encrypt_text[46] ; pin_out          ;
+; |DES|encrypt_text[47] ; |DES|encrypt_text[47] ; pin_out          ;
+; |DES|encrypt_text[48] ; |DES|encrypt_text[48] ; pin_out          ;
+; |DES|encrypt_text[49] ; |DES|encrypt_text[49] ; pin_out          ;
+; |DES|encrypt_text[50] ; |DES|encrypt_text[50] ; pin_out          ;
+; |DES|encrypt_text[51] ; |DES|encrypt_text[51] ; pin_out          ;
+; |DES|encrypt_text[52] ; |DES|encrypt_text[52] ; pin_out          ;
+; |DES|encrypt_text[53] ; |DES|encrypt_text[53] ; pin_out          ;
+; |DES|encrypt_text[54] ; |DES|encrypt_text[54] ; pin_out          ;
+; |DES|encrypt_text[55] ; |DES|encrypt_text[55] ; pin_out          ;
+; |DES|encrypt_text[56] ; |DES|encrypt_text[56] ; pin_out          ;
+; |DES|encrypt_text[57] ; |DES|encrypt_text[57] ; pin_out          ;
+; |DES|encrypt_text[58] ; |DES|encrypt_text[58] ; pin_out          ;
+; |DES|encrypt_text[59] ; |DES|encrypt_text[59] ; pin_out          ;
+; |DES|encrypt_text[60] ; |DES|encrypt_text[60] ; pin_out          ;
+; |DES|encrypt_text[61] ; |DES|encrypt_text[61] ; pin_out          ;
+; |DES|encrypt_text[62] ; |DES|encrypt_text[62] ; pin_out          ;
+; |DES|encrypt_text[63] ; |DES|encrypt_text[63] ; pin_out          ;
++-----------------------+-----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 10.1 Build 197 01/19/2011 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 22 14:55:55 2013
+Info: Command: quartus_sim --simulation_results_format=VWF DES -c DES
+Info: Using vector source file "//eces172.colorado.edu/pravecek/win7folders/Desktop/ECEN 3000/DES/Waveform.vwf"
+Warning: Can't find node "GetKPlus:comb_3|K[63]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[62]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[61]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[60]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[59]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[58]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[57]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[56]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[55]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[54]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[53]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[52]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[51]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[50]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[49]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[48]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[47]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[46]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[45]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[44]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[43]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[42]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[41]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[40]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[39]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[38]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[37]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[36]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[35]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[34]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[33]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[32]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[31]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[30]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[29]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[28]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[27]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[26]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[25]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[24]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[23]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[22]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[21]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[20]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[19]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[18]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[17]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[16]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[15]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[14]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[13]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[12]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[11]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[10]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[9]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[8]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[7]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[6]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[5]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[4]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[3]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[2]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[1]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|K[0]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[55]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[54]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[53]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[52]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[51]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[50]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[49]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[48]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[47]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[46]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[45]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[44]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[43]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[42]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[41]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[40]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[39]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[38]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[37]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[36]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[35]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[34]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[33]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[32]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[31]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[30]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[29]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[28]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[27]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[26]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[25]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[24]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[23]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[22]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[21]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[20]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[19]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[18]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[17]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[16]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[15]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[14]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[13]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[12]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[11]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[10]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[9]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[8]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[7]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[6]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[5]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[4]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[3]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[2]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[1]" for functional simulation. Ignored vector source file node.
+Warning: Can't find node "GetKPlus:comb_3|KPlus[0]" for functional simulation. Ignored vector source file node.
+Warning: Can't find signal in vector source file for input pin "|DES|key"
+Warning: Can't find signal in vector source file for input pin "|DES|din"
+Warning: Can't find signal in vector source file for input pin "|DES|clk"
+Warning: Can't find signal in vector source file for input pin "|DES|reset"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Vector file DES.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 124 warnings
+    Info: Peak virtual memory: 182 megabytes
+    Info: Processing ended: Tue Jan 22 14:55:57 2013
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

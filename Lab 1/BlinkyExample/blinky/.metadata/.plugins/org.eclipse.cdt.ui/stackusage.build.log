@@ -1,0 +1,7 @@
+15:06:46 **** Clean-only build of configuration Debug for project stackusage ****
+make clean 
+rm -rf  ./src/stack.o ./src/stackusage_main.o  ./driver/crp.o ./driver/debug_printf.o  ./config/stackusage_cr_startup_lpc11.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./src/stack.d ./src/stackusage_main.d  ./driver/crp.d ./driver/debug_printf.d  ./config/stackusage_cr_startup_lpc11.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  stackusage.axf
+ 
+
+15:06:47 Build Finished (took 548ms)
+

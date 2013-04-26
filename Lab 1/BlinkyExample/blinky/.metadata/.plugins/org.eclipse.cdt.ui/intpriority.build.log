@@ -1,0 +1,7 @@
+15:06:39 **** Clean-only build of configuration Debug for project intpriority ****
+make clean 
+rm -rf  ./src/intpriority_main.o  ./driver/crp.o ./driver/debug_printf.o  ./config/intpriority_cr_startup_lpc11.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./src/intpriority_main.d  ./driver/crp.d ./driver/debug_printf.d  ./config/intpriority_cr_startup_lpc11.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  intpriority.axf
+ 
+
+15:06:40 Build Finished (took 536ms)
+

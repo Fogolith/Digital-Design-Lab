@@ -1,0 +1,7 @@
+15:06:41 **** Clean-only build of configuration Debug for project power_api_demo ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  power_api_demo.axf
+ 
+
+15:06:43 Build Finished (took 2s.742ms)
+

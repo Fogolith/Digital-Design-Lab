@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Temperature</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="MaiColor">#00FF00</color>
+    <string name="myClickHandler">myClickHandler</string>
+    <string name="bin">to Binary</string>
+    <string name="hex">to Hex</string>
+    <string name="octal">to Octal</string>
+    <string name="convert">Convert Digit</string>
+	
+    
+</resources>

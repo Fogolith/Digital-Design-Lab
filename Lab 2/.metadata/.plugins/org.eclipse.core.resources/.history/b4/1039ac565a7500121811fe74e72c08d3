@@ -1,0 +1,198 @@
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"main.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.fibEasy,"ax",%progbits
+  18              		.align	2
+  19              		.global	fibEasy
+  20              		.code	16
+  21              		.thumb_func
+  23              	fibEasy:
+  24              	.LFB0:
+  25              		.file 1 "../src/main.c"
+   1:../src/main.c **** extern int fibonacci(int nn);
+   2:../src/main.c **** 
+   3:../src/main.c **** int fibEasy(int nn)
+   4:../src/main.c **** {
+  26              		.loc 1 4 0
+  27              		.cfi_startproc
+  28 0000 90B5     		push	{r4, r7, lr}
+  29              	.LCFI0:
+  30              		.cfi_def_cfa_offset 12
+  31              		.cfi_offset 4, -12
+  32              		.cfi_offset 7, -8
+  33              		.cfi_offset 14, -4
+  34 0002 83B0     		sub	sp, sp, #12
+  35              	.LCFI1:
+  36              		.cfi_def_cfa_offset 24
+  37 0004 00AF     		add	r7, sp, #0
+  38              	.LCFI2:
+  39              		.cfi_def_cfa_register 7
+  40 0006 7860     		str	r0, [r7, #4]
+   5:../src/main.c **** 	if(nn == 1 || nn == 2)
+  41              		.loc 1 5 0
+  42 0008 7B68     		ldr	r3, [r7, #4]
+  43 000a 012B     		cmp	r3, #1
+  44 000c 02D0     		beq	.L2
+  45              		.loc 1 5 0 is_stmt 0 discriminator 1
+  46 000e 7B68     		ldr	r3, [r7, #4]
+  47 0010 022B     		cmp	r3, #2
+  48 0012 01D1     		bne	.L3
+  49              	.L2:
+   6:../src/main.c **** 	{
+   7:../src/main.c **** 		return 1;
+  50              		.loc 1 7 0 is_stmt 1
+  51 0014 0123     		mov	r3, #1
+  52 0016 27E0     		b	.L4
+  53              	.L3:
+   8:../src/main.c **** 	}
+   9:../src/main.c **** 	else if (nn < 1)
+  54              		.loc 1 9 0
+  55 0018 7B68     		ldr	r3, [r7, #4]
+  56 001a 002B     		cmp	r3, #0
+  57 001c 01DC     		bgt	.L5
+  10:../src/main.c **** 	{
+  11:../src/main.c **** 		return 0;
+  58              		.loc 1 11 0
+  59 001e 0023     		mov	r3, #0
+  60 0020 22E0     		b	.L4
+  61              	.L5:
+  12:../src/main.c **** 	}
+  13:../src/main.c **** 	else if(nn > 10)
+  62              		.loc 1 13 0
+  63 0022 7B68     		ldr	r3, [r7, #4]
+  64 0024 0A2B     		cmp	r3, #10
+  65 0026 0DDD     		ble	.L6
+  14:../src/main.c **** 	{
+  15:../src/main.c **** 		return fibEasy(nn-1) - fibEasy(nn-2);
+  66              		.loc 1 15 0
+  67 0028 7B68     		ldr	r3, [r7, #4]
+  68 002a 013B     		sub	r3, r3, #1
+  69 002c 181C     		mov	r0, r3
+  70 002e FFF7FEFF 		bl	fibEasy
+  71 0032 041C     		mov	r4, r0
+  72 0034 7B68     		ldr	r3, [r7, #4]
+  73 0036 023B     		sub	r3, r3, #2
+  74 0038 181C     		mov	r0, r3
+  75 003a FFF7FEFF 		bl	fibEasy
+  76 003e 031C     		mov	r3, r0
+  77 0040 E31A     		sub	r3, r4, r3
+  78 0042 11E0     		b	.L4
+  79              	.L6:
+  16:../src/main.c **** 	}
+  17:../src/main.c **** 	else if(nn <= 10)
+  80              		.loc 1 17 0
+  81 0044 7B68     		ldr	r3, [r7, #4]
+  82 0046 0A2B     		cmp	r3, #10
+  83 0048 0DDC     		bgt	.L7
+  18:../src/main.c **** 	{
+  19:../src/main.c **** 		return fibEasy(nn-1) + fibEasy(nn-2);
+  84              		.loc 1 19 0
+  85 004a 7B68     		ldr	r3, [r7, #4]
+  86 004c 013B     		sub	r3, r3, #1
+  87 004e 181C     		mov	r0, r3
+  88 0050 FFF7FEFF 		bl	fibEasy
+  89 0054 041C     		mov	r4, r0
+  90 0056 7B68     		ldr	r3, [r7, #4]
+  91 0058 023B     		sub	r3, r3, #2
+  92 005a 181C     		mov	r0, r3
+  93 005c FFF7FEFF 		bl	fibEasy
+  94 0060 031C     		mov	r3, r0
+  95 0062 E318     		add	r3, r4, r3
+  96 0064 00E0     		b	.L4
+  97              	.L7:
+  20:../src/main.c **** 	}
+  21:../src/main.c **** 	return 0;
+  98              		.loc 1 21 0
+  99 0066 0023     		mov	r3, #0
+ 100              	.L4:
+  22:../src/main.c **** }
+ 101              		.loc 1 22 0
+ 102 0068 181C     		mov	r0, r3
+ 103 006a BD46     		mov	sp, r7
+ 104 006c 03B0     		add	sp, sp, #12
+ 105              		@ sp needed for prologue
+ 106 006e 90BD     		pop	{r4, r7, pc}
+ 107              		.cfi_endproc
+ 108              	.LFE0:
+ 110              		.section	.text.main,"ax",%progbits
+ 111              		.align	2
+ 112              		.global	main
+ 113              		.code	16
+ 114              		.thumb_func
+ 116              	main:
+ 117              	.LFB1:
+  23:../src/main.c **** 
+  24:../src/main.c **** int main(void) {
+ 118              		.loc 1 24 0
+ 119              		.cfi_startproc
+ 120 0000 80B5     		push	{r7, lr}
+ 121              	.LCFI3:
+ 122              		.cfi_def_cfa_offset 8
+ 123              		.cfi_offset 7, -8
+ 124              		.cfi_offset 14, -4
+ 125 0002 84B0     		sub	sp, sp, #16
+ 126              	.LCFI4:
+ 127              		.cfi_def_cfa_offset 24
+ 128 0004 00AF     		add	r7, sp, #0
+ 129              	.LCFI5:
+ 130              		.cfi_def_cfa_register 7
+  25:../src/main.c **** 
+  26:../src/main.c **** 	int nn = 20;
+ 131              		.loc 1 26 0
+ 132 0006 1423     		mov	r3, #20
+ 133 0008 FB60     		str	r3, [r7, #12]
+  27:../src/main.c **** 	int fibOutEasy = fibEasy(nn);
+ 134              		.loc 1 27 0
+ 135 000a FB68     		ldr	r3, [r7, #12]
+ 136 000c 181C     		mov	r0, r3
+ 137 000e FFF7FEFF 		bl	fibEasy
+ 138 0012 031C     		mov	r3, r0
+ 139 0014 BB60     		str	r3, [r7, #8]
+  28:../src/main.c **** 
+  29:../src/main.c **** 	int fibOut = fibonacci(nn);
+ 140              		.loc 1 29 0
+ 141 0016 FB68     		ldr	r3, [r7, #12]
+ 142 0018 181C     		mov	r0, r3
+ 143 001a FFF7FEFF 		bl	fibonacci
+ 144 001e 031C     		mov	r3, r0
+ 145 0020 7B60     		str	r3, [r7, #4]
+  30:../src/main.c **** 
+  31:../src/main.c **** 	//if(fibOutEasy != fibOut);
+  32:../src/main.c **** 
+  33:../src/main.c **** 	return 0;
+ 146              		.loc 1 33 0
+ 147 0022 0023     		mov	r3, #0
+  34:../src/main.c **** }
+ 148              		.loc 1 34 0
+ 149 0024 181C     		mov	r0, r3
+ 150 0026 BD46     		mov	sp, r7
+ 151 0028 04B0     		add	sp, sp, #16
+ 152              		@ sp needed for prologue
+ 153 002a 80BD     		pop	{r7, pc}
+ 154              		.cfi_endproc
+ 155              	.LFE1:
+ 157              		.text
+ 158              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\Jacob\AppData\Local\Temp\ccWSV5DL.s:18     .text.fibEasy:00000000 $t
+C:\Users\Jacob\AppData\Local\Temp\ccWSV5DL.s:23     .text.fibEasy:00000000 fibEasy
+C:\Users\Jacob\AppData\Local\Temp\ccWSV5DL.s:111    .text.main:00000000 $t
+C:\Users\Jacob\AppData\Local\Temp\ccWSV5DL.s:116    .text.main:00000000 main
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+fibonacci

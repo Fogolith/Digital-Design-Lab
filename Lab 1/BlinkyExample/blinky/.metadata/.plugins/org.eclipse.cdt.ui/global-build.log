@@ -1,0 +1,688 @@
+13:56:38 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+13:56:41 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+13:57:56 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+13:57:59 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+13:58:27 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+13:58:47 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:00:03 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:01:16 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:01:18 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+Finished building: ../src/adc_main.c
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:61:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:90:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2348	      4	     40	   2392	    958	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:05:50 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:05:52 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:61:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:98:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:90:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  12600	      4	    380	  12984	   32b8	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:06:17 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:06:20 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:61:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:98:3: warning: implicit declaration of function 'Printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:90:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+./src/adc_main.o: In function `main':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\adc\Debug/../src/adc_main.c:98: undefined reference to `Printf'
+collect2: ld returned 1 exit status
+make: *** [adc.axf] Error 1
+14:06:43 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:06:45 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:61:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:98:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:90:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  12600	      4	    380	  12984	   32b8	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:07:25 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:12:52 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+Finished building: ../src/adc_main.c
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:107:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  12616	      4	    384	  13004	   32cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:14:04 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:14:07 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:110:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  12928	      4	    384	  13316	   3404	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:14:56 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:19:22 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:145:26: error: expected expression before 'double'
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+make: *** [src/adc_main.o] Error 1
+14:19:59 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:145:41: warning: value computed is not used [-Wunused-value]
+../src/adc_main.c:145:50: error: expected ';' before ')' token
+../src/adc_main.c:145:50: error: expected statement before ')' token
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+make: *** [src/adc_main.o] Error 1
+14:20:18 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:21:48 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  12992	      4	    384	  13380	   3444	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:23:05 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13032	      4	    384	  13420	   346c	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:24:40 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13072	      4	    384	  13460	   3494	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:26:23 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13072	      4	    384	  13460	   3494	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:27:58 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:141:3: error: expected ';' before 'wasOn'
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+make: *** [src/adc_main.o] Error 1
+14:28:14 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13104	      4	    384	  13492	   34b4	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:29:06 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13128	      4	    384	  13516	   34cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:30:12 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13128	      4	    384	  13516	   34cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:32:03 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:34:56 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:135:9: warning: operation on 'wasOn' may be undefined [-Wsequence-point]
+../src/adc_main.c:143:9: warning: operation on 'wasOn' may be undefined [-Wsequence-point]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13136	      4	    384	  13524	   34d4	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:35:51 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:135:9: warning: operation on 'wasOn' may be undefined [-Wsequence-point]
+../src/adc_main.c:142:9: warning: operation on 'wasOn' may be undefined [-Wsequence-point]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13128	      4	    384	  13516	   34cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:37:09 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:38:41 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+Finished building: ../src/adc_main.c
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:39:19 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:41:32 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13072	      4	    384	  13460	   3494	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:43:13 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13088	      4	    384	  13476	   34a4	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:43:20 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:43:24 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:43:27 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:43:40 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:45:00 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:46:14 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13096	      4	    384	  13484	   34ac	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:47:27 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13128	      4	    384	  13516	   34cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:48:20 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+14:48:59 **** Incremental Build of configuration Lib for project lib_small_printf_m0 ****
+make all 
+make: Nothing to be done for `all'.
+14:49:01 **** Incremental Build of configuration Debug for project adc ****
+make all 
+Building file: ../src/adc_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\inc" -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/adc_main.d" -MT"src/adc_main.d" -o "src/adc_main.o" "../src/adc_main.c"
+../src/adc_main.c: In function 'ADCBar':
+../src/adc_main.c:70:7: warning: unused variable 'ValueBarBuf' [-Wunused-variable]
+../src/adc_main.c: In function 'main':
+../src/adc_main.c:113:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/adc_main.c:99:7: warning: unused variable 'ADCReadout' [-Wunused-variable]
+Finished building: ../src/adc_main.c
+ 
+Building target: adc.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 1\BlinkyExample\blinky\lib_small_printf_m0\Lib" -Xlinker -Map=adc.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "adc.axf"  ./startup/cr_startup_lpc11.o  ./src/adc_main.o  ./driver/adc.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   -llib_small_printf_m0
+Finished building target: adc.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size adc.axf; arm-none-eabi-objcopy -O binary adc.axf adc.bin ; checksum -p LPC1114_302 -d adc.bin;
+   text	   data	    bss	    dec	    hex	filename
+  13128	      4	    384	  13516	   34cc	adc.axf
+Created checksum 0xefffd62d at offset 0x1c in file adc.bin 
+14:49:06 **** Incremental Build of configuration Debug for project adc ****
+make all 
+make: Nothing to be done for `all'.
+20:28:18 **** Clean-only build of configuration Debug for project systick ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/systick_main.o  ./driver/crp.o ./driver/small_gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/systick_main.d  ./driver/crp.d ./driver/small_gpio.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  systick.axf
+ 
+20:28:22 **** Build of configuration Debug for project systick ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Command canceled

@@ -1,0 +1,7 @@
+15:06:47 **** Clean-only build of configuration Debug for project swuart ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/swuart_main.o  ./driver/can.o ./driver/gpio.o ./driver/lpc_swu.o ./driver/timer32.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/swuart_main.d  ./driver/can.d ./driver/gpio.d ./driver/lpc_swu.d ./driver/timer32.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  model.axf
+ 
+
+15:06:48 Build Finished (took 1s.107ms)
+

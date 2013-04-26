@@ -1,0 +1,7 @@
+15:06:49 **** Clean-only build of configuration Debug for project timedwakeup ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/main.d  ./driver/crp.d ./driver/gpio.d ./driver/timer16.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  timedwakeup.axf
+ 
+
+15:06:50 Build Finished (took 1s.18ms)
+

@@ -1,0 +1,149 @@
+/*
+===============================================================================
+ Name        : main.c
+ Author      : 
+ Version     :
+ Copyright   : Copyright (C) 
+ Description : main definition
+===============================================================================
+*/
+
+#ifdef __USE_CMSIS
+#include "LPC11xx.h"
+#endif
+
+#include <cr_section_macros.h>
+#include <NXP/crp.h>
+
+// Variable to store CRP value in. Will be placed automatically
+// by the linker when "Enable Code Read Protect" selected.
+// See crp.h header for more information
+__CRP const unsigned int CRP_WORD = CRP_NO_CRP ;
+
+// TODO: insert other include files here
+
+
+
+// TODO: insert other definitions and declarations here
+#define LED_PORT 0		// Port for led
+#define LED_BIT 7		// Bit on port for led
+#define LED_ON 1		// Level to set port to turn on led
+#define LED_OFF 0		// Level to set port to turn off led
+
+static LPC_GPIO_TypeDef (* const LPC_GPIO[4]) = { LPC_GPIO0, LPC_GPIO1, LPC_GPIO2, LPC_GPIO3 };
+
+volatile uint32_t timer32_0_counter = 0;
+volatile uint32_t timer32_0_capture = 0;
+
+/* GPIO and GPIO Interrupt Initialization */
+void GPIOInit() {
+
+    /* Enable AHB clock to the GPIO domain. */
+  LPC_SYSCON->SYSAHBCLKCTRL |= (1<<6);
+
+  /* Enable JTAG */
+  LPC_IOCON->R_PIO1_1  &= ~0x07;
+  LPC_IOCON->R_PIO1_1  |= 0x01;
+
+  /* Enable 1 as interupts */
+  NVIC_EnableIRQ(EINT1_IRQn);
+
+  NVIC_SetPriority(EINT1_IRQn, 0);
+
+}
+
+/* TIMER32 and TIMER32 Interrupt Initialization */
+void TIMERInit() {
+
+	int TimerInterval = 1; //1MS
+
+	/* Some of the I/O pins need to be carefully planned if
+	you use below module because JTAG and TIMER CAP/MAT pins are muxed. */
+	LPC_SYSCON->SYSAHBCLKCTRL |= (1<<9);
+	LPC_IOCON->PIO1_5 &= ~0x07;	/*  Timer0_32 I/O config */
+	LPC_IOCON->PIO1_5 |= 0x02;	/* Timer0_32 CAP0 */
+	LPC_IOCON->PIO1_6 &= ~0x07;
+	LPC_IOCON->PIO1_6 |= 0x02;	/* Timer0_32 MAT0 */
+	LPC_IOCON->PIO1_7 &= ~0x07;
+	LPC_IOCON->PIO1_7 |= 0x02;	/* Timer0_32 MAT1 */
+	LPC_IOCON->PIO0_1 &= ~0x07;
+	LPC_IOCON->PIO0_1 |= 0x02;	/* Timer0_32 MAT2 */
+
+	timer32_0_counter = 0;
+	timer32_0_capture = 0;
+	LPC_TMR32B0->MR0 = TimerInterval;
+	/* Capture 0 on rising edge, interrupt enable. */
+	LPC_TMR32B0->CCR = (0x1<<0)|(0x1<<2);
+	LPC_TMR32B0->MCR = 3;			/* Interrupt and Reset on MR0 */
+
+	/* Enable the TIMER0 Interrupt */
+	NVIC_EnableIRQ(TIMER_32_0_IRQn);
+
+	NVIC_SetPriority(TIMER_32_0_IRQn,0);
+
+	LPC_TMR32B0->TCR = 1;
+
+}
+
+void SetPin(int portNum, int bitPosi, int dir)
+{
+	if(dir)
+		LPC_GPIO[portNum]->DIR |= 1<<bitPosi;
+	else
+		LPC_GPIO[portNum]->DIR &= ~(1<<bitPosi);
+}
+
+/* GPIO Interrupt Handler */
+void PIOINT2_IRQHandler(void) {
+
+	SetPin( LED_PORT, LED_BIT, 0 );
+
+
+}
+
+/* TIMER32 Interrupt Handler */
+void TIMER32_0_IRQHandler(void) {
+
+    /* Your code here */
+	SetPin(LED_PORT, LED_BIT, 0);
+}
+
+void EnableInterupts()
+{
+	LPC_GPIO2->IS &= ~(0x1<<1);
+	LPC_GPIO2->IBE &= ~(0x1<<1);
+	LPC_GPIO2->IE |= (0x1<<1);
+}
+
+int main(void) {
+
+    /* Initialization code */
+    GPIOInit();                   // Initialize GPIO ports for both Interrupts and LED control
+    //SetPin( LED_PORT, LED_BIT, 1 );
+    //TIMERInit();                // Initialize Timer and Generate a 1ms interrupt
+    EnableInterupts();
+
+    /* Infinite looping */
+    while(1)
+    {
+
+    }
+
+
+    return 0;
+}
+
+/*int main(void) {
+	
+	// TODO: insert code here
+	GPIOInit();
+
+	GPIOSetDir( LED_PORT, LED_BIT, 1 );
+
+	// Enter an infinite loop, just incrementing a counter
+	volatile static int i = 0 ;
+	while(1) {
+		i++ ;
+	}
+	return 0 ;
+}*/

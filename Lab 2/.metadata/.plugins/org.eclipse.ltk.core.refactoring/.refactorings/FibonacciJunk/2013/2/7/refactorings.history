@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Fibonacci/Debug/startup/cr_startup_lpc11.o&apos; to &apos;cr_startup_lpc11.o_DONTCOMPILE&apos;" description="Rename resource &apos;cr_startup_lpc11.o&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/startup/cr_startup_lpc11.o" name="cr_startup_lpc11.o_DONTCOMPILE" stamp="1360704119953" updateReferences="true"/>
+</session>

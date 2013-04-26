@@ -1,0 +1,1552 @@
+13:47:48 **** Clean-only build of configuration Debug for project power_api_demo ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/power_api_demo.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  power_api_demo.axf
+ 
+13:47:51 **** Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: power_api_demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=power_api_demo.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "power_api_demo_Debug.ld" -o "power_api_demo.axf"  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: power_api_demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size power_api_demo.axf; # arm-none-eabi-objcopy -O binary power_api_demo.axf power_api_demo.bin ; checksum -p LPC1114_302 -d power_api_demo.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3304	      4	    380	   3688	    e68	power_api_demo.axf
+ 
+13:49:44 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:03:08 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:05:17 **** Clean-only build of configuration Debug for project blinky ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/blinky_main.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/blinky_main.d  ./driver/adc.d ./driver/can.d ./driver/clkconfig.d ./driver/crp.d ./driver/debug_printf.d ./driver/gpio.d ./driver/i2c.d ./driver/i2cslave.d ./driver/lpc_swu.d ./driver/rs485.d ./driver/small_gpio.d ./driver/ssp.d ./driver/timer16.d ./driver/timer32.d ./driver/uart.d ./driver/wdt.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  blinky.axf
+ 
+14:05:20 **** Build of configuration Debug for project blinky ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/blinky_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/blinky_main.d" -MT"src/blinky_main.d" -o "src/blinky_main.o" "../src/blinky_main.c"
+Finished building: ../src/blinky_main.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/timer32.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer32.d" -MT"driver/timer32.d" -o "driver/timer32.o" "../driver/timer32.c"
+Finished building: ../driver/timer32.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=blinky.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "blinky.axf"  ./startup/cr_startup_lpc11.o  ./src/blinky_main.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size blinky.axf; arm-none-eabi-objcopy -O binary blinky.axf blinky.bin ; checksum -p LPC1114_302 -d blinky.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2368	      4	      8	   2380	    94c	blinky.axf
+Created checksum 0xefffd62d at offset 0x1c in file blinky.bin 
+14:06:16 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:08:18 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:09:52 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building target: power_api_demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=power_api_demo.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "power_api_demo_Debug.ld" -o "power_api_demo.axf"  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: power_api_demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size power_api_demo.axf; # arm-none-eabi-objcopy -O binary power_api_demo.axf power_api_demo.bin ; checksum -p LPC1114_302 -d power_api_demo.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3308	      4	    380	   3692	    e6c	power_api_demo.axf
+ 
+14:10:13 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:10:19 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:12:22 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building target: power_api_demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=power_api_demo.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "power_api_demo_Debug.ld" -o "power_api_demo.axf"  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: power_api_demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size power_api_demo.axf; # arm-none-eabi-objcopy -O binary power_api_demo.axf power_api_demo.bin ; checksum -p LPC1114_302 -d power_api_demo.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3308	      4	    380	   3692	    e6c	power_api_demo.axf
+ 
+14:12:28 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:12:48 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:13:05 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:13:48 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+Building file: ../src/power_api_demo.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -DTARGET_SHORTCHIP=lpc11 -DTARGET_CHIP=LPC1114/302 -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\cmsis" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\config" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\startup" -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\power_api_demo\driver" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/power_api_demo.d" -MT"src/power_api_demo.d" -o "src/power_api_demo.o" "../src/power_api_demo.c"
+Finished building: ../src/power_api_demo.c
+ 
+Building target: power_api_demo.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=power_api_demo.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "power_api_demo_Debug.ld" -o "power_api_demo.axf"  ./startup/cr_startup_lpc11.o  ./src/power_api_demo.o  ./driver/adc.o ./driver/can.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/timer32.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: power_api_demo.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size power_api_demo.axf; # arm-none-eabi-objcopy -O binary power_api_demo.axf power_api_demo.bin ; checksum -p LPC1114_302 -d power_api_demo.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3312	      4	    380	   3696	    e70	power_api_demo.axf
+ 
+14:14:09 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:15:31 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:17:40 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:18:04 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:18:43 **** Incremental Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+14:21:26 **** Clean-only build of configuration Debug for project timedwakeup ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/main.d  ./driver/crp.d ./driver/gpio.d ./driver/timer16.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  timedwakeup.axf
+ 
+14:21:27 **** Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1956	      0	     16	   1972	    7b4	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+14:21:56 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+14:22:22 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+14:23:06 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+14:25:57 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1964	      0	     16	   1980	    7bc	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+14:29:11 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1960	      0	     16	   1976	    7b8	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+14:30:55 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1960	      0	     16	   1976	    7b8	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+14:33:46 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+14:34:23 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1960	      0	     16	   1976	    7b8	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+14:36:21 **** Incremental Build of configuration Release for project timedwakeup ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../driver/adc.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/adc.d" -MT"driver/adc.d" -o "driver/adc.o" "../driver/adc.c"
+Finished building: ../driver/adc.c
+ 
+Building file: ../driver/clkconfig.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/clkconfig.d" -MT"driver/clkconfig.d" -o "driver/clkconfig.o" "../driver/clkconfig.c"
+Finished building: ../driver/clkconfig.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/debug_printf.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/debug_printf.d" -MT"driver/debug_printf.d" -o "driver/debug_printf.o" "../driver/debug_printf.c"
+Finished building: ../driver/debug_printf.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/i2c.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2c.d" -MT"driver/i2c.d" -o "driver/i2c.o" "../driver/i2c.c"
+Finished building: ../driver/i2c.c
+ 
+Building file: ../driver/i2cslave.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/i2cslave.d" -MT"driver/i2cslave.d" -o "driver/i2cslave.o" "../driver/i2cslave.c"
+Finished building: ../driver/i2cslave.c
+ 
+Building file: ../driver/lpc_swu.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/lpc_swu.d" -MT"driver/lpc_swu.d" -o "driver/lpc_swu.o" "../driver/lpc_swu.c"
+Finished building: ../driver/lpc_swu.c
+ 
+Building file: ../driver/rs485.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/rs485.d" -MT"driver/rs485.d" -o "driver/rs485.o" "../driver/rs485.c"
+Finished building: ../driver/rs485.c
+ 
+Building file: ../driver/small_gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/small_gpio.d" -MT"driver/small_gpio.d" -o "driver/small_gpio.o" "../driver/small_gpio.c"
+Finished building: ../driver/small_gpio.c
+ 
+Building file: ../driver/ssp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/ssp.d" -MT"driver/ssp.d" -o "driver/ssp.o" "../driver/ssp.c"
+Finished building: ../driver/ssp.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../driver/uart.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/uart.d" -MT"driver/uart.d" -o "driver/uart.o" "../driver/uart.c"
+Finished building: ../driver/uart.c
+ 
+Building file: ../driver/wdt.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/wdt.d" -MT"driver/wdt.d" -o "driver/wdt.o" "../driver/wdt.c"
+Finished building: ../driver/wdt.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/adc.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O ihex timedwakeup.axf timedwakeup.hex ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1780	      0	     20	   1800	    708	timedwakeup.axf
+Error: Cannot open checksum file timedwakeup.binmake[1]: [post-build] Error 1 (ignored)
+ 
+14:37:11 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+14:37:58 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2372	      0	     20	   2392	    958	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+13:02:42 **** Build of configuration Release for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/adc.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O ihex Part2.axf Part2.hex ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1804	      0	     20	   1824	    720	Part2.axf
+Error: Cannot open checksum file Part2.binmake[1]: [post-build] Error 1 (ignored)
+ 
+13:03:14 **** Clean-only build of configuration Debug for project Part2 ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/main.d  ./driver/crp.d ./driver/gpio.d ./driver/timer16.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  timedwakeup.axf
+ 
+13:03:15 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2372	      0	     20	   2392	    958	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+13:03:40 **** Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+13:03:45 **** Build of configuration Debug for project power_api_demo ****
+make all 
+make: Nothing to be done for `all'.
+13:03:47 **** Incremental Build of configuration Release for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/adc.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O ihex timedwakeup.axf timedwakeup.hex ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1780	      0	     20	   1800	    708	timedwakeup.axf
+Error: Cannot open checksum file timedwakeup.binmake[1]: [post-build] Error 1 (ignored)
+ 
+13:04:20 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:04:50 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1960	      0	     16	   1976	    7b8	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+13:09:22 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:10:35 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:11:17 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:11:38 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:24:45 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:67:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:67:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:77:11: error: 'i' undeclared (first use in this function)
+../src/main.c:110:6: error: 'command' undeclared (first use in this function)
+../src/main.c:114:19: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:115:39: error: 'result' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:137:8: error: 'i' undeclared (first use in this function)
+../src/main.c:138:3: error: 'command' undeclared (first use in this function)
+../src/main.c:139:16: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:140:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:140:36: error: 'result' undeclared (first use in this function)
+../src/main.c:141:20: error: 'PARAM_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:146:16: error: 'CPU_FREQ_EQU' undeclared (first use in this function)
+../src/main.c:149:21: error: 'PLL_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:158:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:251:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:251:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:25:47 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:69:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:69:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:79:11: error: 'i' undeclared (first use in this function)
+../src/main.c:116:19: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:139:8: error: 'i' undeclared (first use in this function)
+../src/main.c:141:16: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:142:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:143:20: error: 'PARAM_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:148:16: error: 'CPU_FREQ_EQU' undeclared (first use in this function)
+../src/main.c:151:21: error: 'PLL_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:160:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:253:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:253:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:118:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:26:33 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:72:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:82:11: error: 'i' undeclared (first use in this function)
+../src/main.c:119:19: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:144:16: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:146:20: error: 'PARAM_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:151:16: error: 'CPU_FREQ_EQU' undeclared (first use in this function)
+../src/main.c:154:21: error: 'PLL_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:256:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:256:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:27:50 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:72:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:82:11: error: 'i' undeclared (first use in this function)
+../src/main.c:119:19: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:144:16: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:146:20: error: 'PARAM_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:151:16: error: 'CPU_FREQ_EQU' undeclared (first use in this function)
+../src/main.c:154:21: error: 'PLL_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:256:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:256:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:27:54 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:72:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:72:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:82:11: error: 'i' undeclared (first use in this function)
+../src/main.c:119:19: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:144:16: error: 'PARAM_LOW_CURRENT' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:146:20: error: 'PARAM_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:151:16: error: 'CPU_FREQ_EQU' undeclared (first use in this function)
+../src/main.c:154:21: error: 'PLL_CMD_CUCCESS' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:256:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:256:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:29:37 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:81:11: error: 'i' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:141:8: error: 'i' undeclared (first use in this function)
+../src/main.c:144:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:162:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c:255:9: error: 'for' loop initial declarations are only allowed in C99 mode
+../src/main.c:255:9: note: use option -std=c99 or -std=gnu99 to compile your code
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:29:57 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:81:11: error: 'i' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:141:8: error: 'i' undeclared (first use in this function)
+../src/main.c:144:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:162:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:120:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:30:15 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O binary timedwakeup.axf timedwakeup.bin ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1960	      0	     16	   1976	    7b8	timedwakeup.axf
+Created checksum 0xefffd635 at offset 0x1c in file timedwakeup.bin 
+13:32:06 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:82:6: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'for'
+../src/main.c:82:11: error: 'i' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:32:52 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:82:6: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'for'
+../src/main.c:82:11: error: 'i' undeclared (first use in this function)
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:33:30 **** Incremental Build of configuration Debug for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:33:50 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:142:8: error: 'i' undeclared (first use in this function)
+../src/main.c:145:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:163:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:34:24 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:146:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:164:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:34:40 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:146:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:164:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:34:50 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:71:7: error: 'rom' undeclared (first use in this function)
+../src/main.c:71:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:146:5: error: 'rom' undeclared (first use in this function)
+../src/main.c:164:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:35:39 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:30:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:165:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+In file included from ../driver/crp.c:20:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+In file included from ../driver/crp.h:24:0,
+                 from ../driver/crp.c:22:
+../config/driver_config.h:16:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:38:0: note: this is the location of the previous definition
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+In file included from ../driver/gpio.c:22:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+In file included from ../driver/timer16.c:22:0:
+../config/driver_config.h:38:0: warning: "CONFIG_ENABLE_DRIVER_TIMER16" redefined [enabled by default]
+../config/driver_config.h:16:0: note: this is the location of the previous definition
+Finished building: ../driver/timer16.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+./src/main.o: In function `main':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:165: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:194: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:223: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:253: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:262: undefined reference to `Wait1ms'
+./src/main.o:C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:264: more undefined references to `Wait1ms' follow
+collect2: ld returned 1 exit status
+make: *** [Part2.axf] Error 1
+13:37:29 **** Incremental Build of configuration Release for project timedwakeup ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DNDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O2 -Os -g -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: timedwakeup.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=timedwakeup.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "timedwakeup.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/adc.o ./driver/clkconfig.o ./driver/crp.o ./driver/debug_printf.o ./driver/gpio.o ./driver/i2c.o ./driver/i2cslave.o ./driver/lpc_swu.o ./driver/rs485.o ./driver/small_gpio.o ./driver/ssp.o ./driver/timer16.o ./driver/uart.o ./driver/wdt.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: timedwakeup.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size timedwakeup.axf; arm-none-eabi-objcopy -O ihex timedwakeup.axf timedwakeup.hex ; checksum -p LPC1114_302 -d timedwakeup.bin;
+   text	   data	    bss	    dec	    hex	filename
+   1780	      0	     20	   1800	    708	timedwakeup.axf
+Error: Cannot open checksum file timedwakeup.binmake[1]: [post-build] Error 1 (ignored)
+ 
+13:38:04 **** Incremental Build of configuration Release for project timedwakeup ****
+make all 
+make: Nothing to be done for `all'.
+13:38:12 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:400:3: warning: implicit declaration of function 'Wait1ms' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+./src/main.o: In function `main':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:400: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:429: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:458: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:488: undefined reference to `Wait1ms'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:497: undefined reference to `Wait1ms'
+./src/main.o:C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:499: more undefined references to `Wait1ms' follow
+collect2: ld returned 1 exit status
+make: *** [Part2.axf] Error 1
+13:39:27 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3084	      4	     56	   3144	    c48	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+13:39:48 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:42:18 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'fibonacci':
+../src/main.c:77:5: warning: implicit declaration of function 'fib' [-Wimplicit-function-declaration]
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+./src/main.o: In function `fibonacci':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:77: undefined reference to `fib'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:77: undefined reference to `fib'
+collect2: ld returned 1 exit status
+make: *** [Part2.axf] Error 1
+13:42:28 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+./src/main.o: In function `fibonacci':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:77: undefined reference to `fib'
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 4\Part2\Debug/../src/main.c:77: undefined reference to `fib'
+collect2: ld returned 1 exit status
+make: *** [Part2.axf] Error 1
+13:42:45 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3068	      4	     56	   3128	    c38	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+13:47:37 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:48:25 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3092	      4	     56	   3152	    c50	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+13:48:55 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:49:23 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:50:34 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:54:02 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Wait1mS':
+../src/main.c:192:10: error: expected expression before 'double'
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+13:54:29 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3362	      4	     56	   3422	    d5e	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+13:54:51 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:55:14 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:56:13 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:56:44 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+13:58:27 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2900	      4	     56	   2960	    b90	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:00:14 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Wait1mS':
+../src/main.c:192:34: error: expected ',' or ';' before ')' token
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+14:00:32 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:134:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2908	      4	     56	   2968	    b98	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:03:13 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2916	      8	     56	   2980	    ba4	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:03:34 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:03:56 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:05:14 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   2916	      8	     56	   2980	    ba4	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:07:26 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3260	      8	     56	   3324	    cfc	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:08:06 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:09:02 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3260	      8	     56	   3324	    cfc	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:10:19 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:10:45 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:11:19 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:12:37 **** Clean-only build of configuration Debug for project Part2 ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/main.d  ./driver/crp.d ./driver/gpio.d ./driver/timer16.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  Part2.axf
+ 
+14:12:44 **** Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../driver/timer16.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/timer16.d" -MT"driver/timer16.d" -o "driver/timer16.o" "../driver/timer16.c"
+Finished building: ../driver/timer16.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3260	      8	     56	   3324	    cfc	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:12:58 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:14:48 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:15:54 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:16:41 **** Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:17:04 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:17:27 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:18:16 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:18:44 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:19:57 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:20:34 **** Incremental Build of configuration Debug for project blinky ****
+make all 
+make: Nothing to be done for `all'.
+14:20:53 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:21:14 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:27:40 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3088	      8	     56	   3152	    c50	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 
+14:28:05 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+make: Nothing to be done for `all'.
+14:29:38 **** Incremental Build of configuration Debug for project Part2 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'InitFromPowerAPIDemo':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/main.c
+ 
+Building target: Part2.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=Part2.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "Part2.axf"  ./startup/cr_startup_lpc11.o  ./src/main.o  ./driver/crp.o ./driver/gpio.o ./driver/timer16.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: Part2.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size Part2.axf; arm-none-eabi-objcopy -O binary Part2.axf Part2.bin ; checksum -p LPC1114_302 -d Part2.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3556	      8	     60	   3624	    e28	Part2.axf
+Created checksum 0xefffd635 at offset 0x1c in file Part2.bin 

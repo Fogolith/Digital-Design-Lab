@@ -1,0 +1,7 @@
+15:06:38 **** Clean-only build of configuration Debug for project i2c ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/i2c_main.o  ./driver/can.o ./driver/crp.o ./driver/gpio.o ./driver/i2c.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/i2c_main.d  ./driver/can.d ./driver/crp.d ./driver/gpio.d ./driver/i2c.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  i2c.axf
+ 
+
+15:06:38 Build Finished (took 566ms)
+

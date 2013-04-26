@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MaiColor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TemperatureActivity" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numInput"
+        android:layout_below="@+id/numInput" >
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/numInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnCovert"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Input Number"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_alignTop="@+id/radioGroup1" >
+
+        <RadioButton
+            android:id="@+id/radBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/bin" />
+
+        <RadioButton
+            android:id="@+id/radHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hex" />
+
+        <RadioButton
+            android:id="@+id/radOctal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/octal" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCovert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:onClick="@string/convertButtonHandler"
+        android:text="@string/convert" />
+
+</RelativeLayout>

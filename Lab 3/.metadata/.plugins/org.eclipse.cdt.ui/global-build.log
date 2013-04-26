@@ -1,0 +1,817 @@
+13:55:10 **** Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+Building file: ../src/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/core_cm0.d" -MT"src/core_cm0.d" -o "src/core_cm0.o" "../src/core_cm0.c"
+Finished building: ../src/core_cm0.c
+ 
+Building file: ../src/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/system_LPC11xx.d" -MT"src/system_LPC11xx.d" -o "src/system_LPC11xx.o" "../src/system_LPC11xx.c"
+Finished building: ../src/system_LPC11xx.c
+ 
+Building target: libCMSISv1p30_LPC11xx.a
+Invoking: MCU Archiver
+arm-none-eabi-ar -r  "libCMSISv1p30_LPC11xx.a"  ./src/core_cm0.o ./src/system_LPC11xx.o   
+c:\nxp\LPCXpresso_5.0.14_1109\lpcxpresso\tools\bin\arm-none-eabi-ar.exe: creating libCMSISv1p30_LPC11xx.a
+Finished building target: libCMSISv1p30_LPC11xx.a
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size libCMSISv1p30_LPC11xx.a ; # arm-none-eabi-objdump -h -S libCMSISv1p30_LPC11xx.a >libCMSISv1p30_LPC11xx.lss
+   text	   data	    bss	    dec	    hex	filename
+    244	      0	      0	    244	     f4	core_cm0.o (ex libCMSISv1p30_LPC11xx.a)
+    844	      4	      0	    848	    350	system_LPC11xx.o (ex libCMSISv1p30_LPC11xx.a)
+ 
+13:55:19 **** Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/cr_startup_lpc11.d" -MT"src/cr_startup_lpc11.d" -o "src/cr_startup_lpc11.o" "../src/cr_startup_lpc11.c"
+Finished building: ../src/cr_startup_lpc11.c
+ 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+    728	      0	      4	    732	    2dc	OscilliscopeInterupt.axf
+ 
+14:00:24 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:00:27 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:58:2: warning: implicit declaration of function 'GPIOSetDir' [-Wimplicit-function-declaration]
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+./src/main.o: In function `main':
+C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\OscilliscopeInterupt\Debug/../src/main.c:58: undefined reference to `GPIOSetDir'
+collect2: ld returned 1 exit status
+make: *** [OscilliscopeInterupt.axf] Error 1
+14:10:55 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:10:58 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetPin':
+../src/main.c:75:3: error: 'LPC_GPIO' undeclared (first use in this function)
+../src/main.c:75:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+14:11:23 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:11:25 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'SetPin':
+../src/main.c:75:3: error: 'LPC_GPIO' undeclared (first use in this function)
+../src/main.c:75:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+14:13:58 **** Clean-only build of configuration Debug for project extint ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/extint_main.o  ./driver/can.o ./driver/crp.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/extint_main.d  ./driver/can.d ./driver/crp.d ./driver/gpio.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  extint.axf
+ 
+14:13:59 **** Build of configuration Debug for project extint ****
+make all 
+Building file: ../startup/cr_startup_lpc11.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"startup/cr_startup_lpc11.d" -MT"startup/cr_startup_lpc11.d" -o "startup/cr_startup_lpc11.o" "../startup/cr_startup_lpc11.c"
+Finished building: ../startup/cr_startup_lpc11.c
+ 
+Building file: ../src/extint_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/extint_main.d" -MT"src/extint_main.d" -o "src/extint_main.o" "../src/extint_main.c"
+Finished building: ../src/extint_main.c
+ 
+Building file: ../driver/can.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/can.d" -MT"driver/can.d" -o "driver/can.o" "../driver/can.c"
+Finished building: ../driver/can.c
+ 
+Building file: ../driver/crp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/crp.d" -MT"driver/crp.d" -o "driver/crp.o" "../driver/crp.c"
+Finished building: ../driver/crp.c
+ 
+Building file: ../driver/gpio.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"driver/gpio.d" -MT"driver/gpio.d" -o "driver/gpio.o" "../driver/gpio.c"
+Finished building: ../driver/gpio.c
+ 
+Building file: ../cmsis/core_cm0.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/core_cm0.d" -MT"cmsis/core_cm0.d" -o "cmsis/core_cm0.o" "../cmsis/core_cm0.c"
+Finished building: ../cmsis/core_cm0.c
+ 
+Building file: ../cmsis/system_LPC11xx.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -D__USE_CMSIS -DDEBUG -D__CODE_RED -I../cmsis -I../config -I../driver -O0 -Os -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"cmsis/system_LPC11xx.d" -MT"cmsis/system_LPC11xx.d" -o "cmsis/system_LPC11xx.o" "../cmsis/system_LPC11xx.c"
+Finished building: ../cmsis/system_LPC11xx.c
+ 
+Building target: extint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=extint.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "extint.axf"  ./startup/cr_startup_lpc11.o  ./src/extint_main.o  ./driver/can.o ./driver/crp.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: extint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size extint.axf; arm-none-eabi-objcopy -O binary extint.axf extint.bin ; checksum -p LPC1114_302 -d extint.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3016	      4	      8	   3028	    bd4	extint.axf
+Created checksum 0xefffd62d at offset 0x1c in file extint.bin 
+14:14:25 **** Incremental Build of configuration Debug for project extint ****
+make all 
+make: Nothing to be done for `all'.
+14:15:08 **** Incremental Build of configuration Debug for project extint ****
+make all 
+make: Nothing to be done for `all'.
+14:15:22 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:15:25 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+    884	      0	      0	    884	    374	OscilliscopeInterupt.axf
+ 
+14:15:34 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:15:37 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+14:30:48 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:30:51 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TIMERInit':
+../src/main.c:69:2: error: 'timer32_0_counter' undeclared (first use in this function)
+../src/main.c:69:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:70:2: error: 'timer32_0_capture' undeclared (first use in this function)
+make: *** [src/main.o] Error 1
+14:33:37 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:33:39 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1100	      0	      8	   1108	    454	OscilliscopeInterupt.axf
+ 
+14:43:28 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+14:43:30 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'PIOINT2_IRQHandler':
+../src/main.c:93:2: warning: implicit declaration of function 'SetPin' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:6: warning: conflicting types for 'SetPin' [enabled by default]
+../src/main.c:93:2: note: previous implicit declaration of 'SetPin' was here
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1368	      0	      8	   1376	    560	OscilliscopeInterupt.axf
+ 
+14:45:05 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'PIOINT2_IRQHandler':
+../src/main.c:93:2: warning: implicit declaration of function 'SetPin' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:105:6: warning: conflicting types for 'SetPin' [enabled by default]
+../src/main.c:93:2: note: previous implicit declaration of 'SetPin' was here
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1384	      0	      8	   1392	    570	OscilliscopeInterupt.axf
+ 
+14:45:38 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1376	      0	      8	   1384	    568	OscilliscopeInterupt.axf
+ 
+14:46:04 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+14:53:27 **** Build of configuration Debug for project extint ****
+make all 
+Building target: extint.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map=extint.map -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "../linker/lpc1114_flash_crp.ld" -o "extint.axf"  ./startup/cr_startup_lpc11.o  ./src/extint_main.o  ./driver/can.o ./driver/crp.o ./driver/gpio.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o   
+Finished building target: extint.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size extint.axf; arm-none-eabi-objcopy -O binary extint.axf extint.bin ; checksum -p LPC1114_302 -d extint.bin;
+   text	   data	    bss	    dec	    hex	filename
+   3016	      4	      8	   3028	    bd4	extint.axf
+Created checksum 0xefffd62d at offset 0x1c in file extint.bin 
+14:53:49 **** Incremental Build of configuration Debug for project extint ****
+make all 
+make: Nothing to be done for `all'.
+14:59:05 **** Incremental Build of configuration Debug for project extint ****
+make all 
+make: Nothing to be done for `all'.
+14:59:14 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1428	      0	      8	   1436	    59c	OscilliscopeInterupt.axf
+ 
+15:00:43 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1416	      0	      8	   1424	    590	OscilliscopeInterupt.axf
+ 
+15:01:39 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+15:01:41 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+15:02:06 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+15:02:10 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+15:03:52 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1176	      0	      0	   1176	    498	OscilliscopeInterupt.axf
+ 
+15:05:06 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1196	      0	      0	   1196	    4ac	OscilliscopeInterupt.axf
+ 
+12:58:06 **** Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1208	      0	      0	   1208	    4b8	OscilliscopeInterupt.axf
+ 
+12:59:44 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1364	      0	      8	   1372	    55c	OscilliscopeInterupt.axf
+ 
+13:02:12 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1200	      0	      0	   1200	    4b0	OscilliscopeInterupt.axf
+ 
+13:04:18 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1208	      0	      0	   1208	    4b8	OscilliscopeInterupt.axf
+ 
+13:07:05 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1240	      0	      0	   1240	    4d8	OscilliscopeInterupt.axf
+ 
+13:12:34 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1264	      0	      0	   1264	    4f0	OscilliscopeInterupt.axf
+ 
+13:14:11 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:17:37 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1264	      0	      0	   1264	    4f0	OscilliscopeInterupt.axf
+ 
+13:18:35 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:18:42 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:18:58 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:30:09 **** Build of configuration Debug for project extint ****
+make all 
+make: Nothing to be done for `all'.
+13:30:19 **** Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+13:30:24 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1348	      4	      8	   1360	    550	OscilliscopeInterupt.axf
+ 
+13:30:44 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:31:27 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1588	      4	     12	   1604	    644	OscilliscopeInterupt.axf
+ 
+13:33:34 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1592	      4	     12	   1608	    648	OscilliscopeInterupt.axf
+ 
+13:34:17 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:35:12 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1592	      4	     12	   1608	    648	OscilliscopeInterupt.axf
+ 
+13:36:23 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:40:46 **** Incremental Build of configuration Debug for project CMSISv1p30_LPC11xx ****
+make all 
+make: Nothing to be done for `all'.
+13:40:50 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1724	      8	     12	   1744	    6d0	OscilliscopeInterupt.axf
+ 
+13:41:12 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:46:06 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1724	      8	     12	   1744	    6d0	OscilliscopeInterupt.axf
+ 
+13:48:58 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1732	      8	     12	   1752	    6d8	OscilliscopeInterupt.axf
+ 
+13:51:49 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1756	      8	     12	   1776	    6f0	OscilliscopeInterupt.axf
+ 
+13:53:04 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1756	      8	     12	   1776	    6f0	OscilliscopeInterupt.axf
+ 
+13:54:25 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:55:19 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1756	      8	     12	   1776	    6f0	OscilliscopeInterupt.axf
+ 
+13:56:58 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:58:28 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1768	      8	     12	   1788	    6fc	OscilliscopeInterupt.axf
+ 
+13:58:54 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1768	      8	     12	   1788	    6fc	OscilliscopeInterupt.axf
+ 
+13:59:10 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+13:59:29 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+make: Nothing to be done for `all'.
+14:00:41 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1808	      8	     12	   1828	    724	OscilliscopeInterupt.axf
+ 
+14:08:05 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'TIMER32_0_IRQHandler':
+../src/main.c:115:3: error: 'dutyCycle' undeclared (first use in this function)
+../src/main.c:115:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:154:9: warning: unused variable 'dutyCycle' [-Wunused-variable]
+make: *** [src/main.o] Error 1
+14:08:32 **** Incremental Build of configuration Debug for project OscilliscopeInterupt ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_CMSIS=CMSISv1p30_LPC11xx -I"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OscilliscopeInterupt.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Jacob\Dropbox\ECEN 3000\Lab 3\CMSISv1p30_LPC11xx\Debug" -Xlinker -Map="OscilliscopeInterupt.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "OscilliscopeInterupt_Debug.ld" -o "OscilliscopeInterupt.axf"  ./src/cr_startup_lpc11.o ./src/main.o   -lCMSISv1p30_LPC11xx
+Finished building target: OscilliscopeInterupt.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "OscilliscopeInterupt.axf"; # arm-none-eabi-objcopy -O binary "OscilliscopeInterupt.axf" "OscilliscopeInterupt.bin" ; checksum -p LPC1114_302 -d "OscilliscopeInterupt.bin";
+   text	   data	    bss	    dec	    hex	filename
+   1812	      8	     16	   1836	    72c	OscilliscopeInterupt.axf
+ 

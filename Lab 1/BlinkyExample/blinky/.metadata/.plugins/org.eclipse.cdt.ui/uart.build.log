@@ -1,0 +1,7 @@
+15:06:50 **** Clean-only build of configuration Debug for project uart ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/uart_main.o  ./driver/can.o ./driver/crp.o ./driver/uart.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/uart_main.d  ./driver/can.d ./driver/crp.d ./driver/uart.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  uart.axf
+ 
+
+15:06:50 Build Finished (took 463ms)
+

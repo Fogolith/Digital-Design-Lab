@@ -1,0 +1,7 @@
+15:06:46 **** Clean-only build of configuration Debug for project ssp ****
+make clean 
+rm -rf  ./startup/cr_startup_lpc11.o  ./src/ssp_main.o  ./driver/can.o ./driver/crp.o ./driver/gpio.o ./driver/ssp.o  ./cmsis/core_cm0.o ./cmsis/system_LPC11xx.o  ./startup/cr_startup_lpc11.d  ./src/ssp_main.d  ./driver/can.d ./driver/crp.d ./driver/gpio.d ./driver/ssp.d  ./cmsis/core_cm0.d ./cmsis/system_LPC11xx.d  ssp.axf
+ 
+
+15:06:46 Build Finished (took 453ms)
+
