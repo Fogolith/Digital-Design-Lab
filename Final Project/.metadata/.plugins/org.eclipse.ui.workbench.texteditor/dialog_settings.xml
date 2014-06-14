@@ -2,28 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="189" key="DIALOG_Y_ORIGIN"/>
+		<item value="311" key="DIALOG_Y_ORIGIN"/>
+		<item value="964" key="DIALOG_X_ORIGIN"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="680" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="app_name" key="selection"/>
+		<item value="allList" key="selection"/>
 		<list key="findhistory">
-			<item value="app_name"/>
-			<item value="onItemClick"/>
-			<item value="PARTIAL_WAKEUP_LOCk"/>
-			<item value="ACQUIRE_CAUSES_WAKEUP"/>
-			<item value="hideMouseButtons"/>
-			<item value="settings"/>
-			<item value="twoTouchRightClick"/>
+			<item value="Xlist"/>
+			<item value="allList"/>
+			<item value="Ylist"/>
+			<item value="onCreate"/>
+			<item value="EEGlist"/>
+			<item value="grit"/>
+			<item value="leftButtonDown"/>
+			<item value="first"/>
 		</list>
 		<list key="replacehistory">
+			<item value="xz"/>
 		</list>
 	</section>
 </section>

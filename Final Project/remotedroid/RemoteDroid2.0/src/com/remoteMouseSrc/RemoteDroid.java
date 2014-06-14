@@ -5,11 +5,8 @@ import android.content.Intent;
 import android.os.*;
 import android.util.Log;
 import android.view.*;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-//import android.widget.ImageButton;
-import android.widget.ListView;
 //import android.widget.SimpleAdapter;
 //import android.widget.TextView;
 import android.widget.Toast;
@@ -74,16 +71,16 @@ public class RemoteDroid extends Activity {
 		}
 		// discover some servers
 		this.hostlist = new Vector<String>();
-		((ListView)this.findViewById(R.id.lvHosts)).setOnItemClickListener(new AdapterView.OnItemClickListener() {
+		/*((ListView)this.findViewById(R.id.lvHosts)).setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			public void onItemClick(AdapterView<?> adapter, View v, int position, long id) {
 				onHostClick(position);
 			}
-		});
+		});*/
 	}
 
 	private void updateHostList() {
 		FoundHostsAdapter adapter = new FoundHostsAdapter(this.hostlist, this.getApplication());
-		((ListView)this.findViewById(R.id.lvHosts)).setAdapter(adapter);
+		//((ListView)this.findViewById(R.id.lvHosts)).setAdapter(adapter);
 	}
 
 

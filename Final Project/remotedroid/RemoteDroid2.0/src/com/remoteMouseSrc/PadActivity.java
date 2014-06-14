@@ -2,6 +2,7 @@ package com.remoteMouseSrc;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -69,7 +70,7 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
 	private static final int TAP_DOUBLE = 3;
 	private static final int TAP_DOUBLE_FINISH = 4;
 	private static final int TAP_RIGHT = 5;
-	private static final String TAG = "RemoteDroid";
+	private static final String TAG = "RemoteDroid";   
 
 	//
 	private OSCPortOut sender;
@@ -418,6 +419,17 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
 
 	public PadActivity() {
 		super();
+		 Xlist = new ArrayList<Float>(); 
+		 Ylist = new ArrayList<Float>();
+	     Zlist = new ArrayList<Float>();
+	     EEGlist = new ArrayList<Float>();
+	     allList = new ArrayList<Float>();
+	     prevX = 0; 
+	 	 prevY = 0;
+	 	 currX = 0; 
+	 	 currY = 0; 
+	 	 lastSent = 0; 
+	 	clickState = false; 
 	}
 
 	private void enableSensors() {
@@ -1157,8 +1169,8 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
 
 	public void onDestroy() {
 		super.onDestroy();
-		this.sender.close();
 		mBluetoothHelper.stopService();
+		this.sender.close();
 	}
 
 	// keyboard
@@ -1796,21 +1808,6 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
 		this.flMidButton.setBackgroundResource(R.drawable.keyboard_off);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	  public void onBTConnected() {
           Log.d("Lab8", "Bluetooth connected");
       }
@@ -1818,15 +1815,14 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
       @Override
       public void onBTConnecting() {
           Log.d("Lab8", "Bluetooth connecting");
-          alertbox("Bluetooth Connecting");
-          float x = 0; 
-          float y = 0; 
+          float x = 10; 
+          float y = 10; 
           float xMove = x - this.xHistory;
 		  float yMove = y - this.yHistory;
 
 		  this.xHistory = x;
 		  this.yHistory = y;
-          this.sendMouseEvent(type, xMove, yMove);
+          this.sendMouseEvent(2, xMove, yMove);
       }
 
       @Override
@@ -1837,23 +1833,42 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
       @Override
       public void onSmile(boolean status, int index) {
           // TODO Auto-generated method stub
+    	  int x = 0; 
+    	  if(x == 1);
           
       }
 
       @Override
-      public void onGrit(boolean status, int index) { }
+      public void onGrit(boolean status, int index) { 
+    	  int x = 0; 
+    	  if(x == 1);
+      }
 
       @Override
-      public void onLeftGrit(boolean status, int index) { }
+      public void onLeftGrit(boolean status, int index) { 
+    	  int x = 0; 
+    	  if(x == 1);
+      }
 
       @Override
-      public void onRightGrit(boolean status, int index) { }
+      public void onRightGrit(boolean status, int index) { 
+    	  int x = 0;
+
+    	  if(x == 1);
+      }
 
       @Override
-      public void onLeftBlink(boolean status, int index) { }
+      public void onLeftBlink(boolean status, int index) { 
+    	  int x = 0;
+    	  if(x == 1);
+      }
 
       @Override
-      public void onRightBlink(boolean status, int index)   { }
+      public void onRightBlink(boolean status, int index)   { 
+    	  int x = 0;
+
+    	  if(x == 1);
+      }
 
       @Override
       public void onDataNoise(float[] quality) { }
@@ -1867,16 +1882,132 @@ public class PadActivity extends Activity implements BluetoothServiceHelper.EEGH
       @Override
       public void onWriteResult(int r) { }
 
-	@Override
+  	
+  	boolean clickState;
+  	private ArrayList<Float> EEGlist; 
+	@Override 
 	public void onRawEMGData(float[][] data, int index) {
 		// TODO Auto-generated method stub
 		
+		if(EEGlist.size() == 0){
+
+		}
+		for(int ii = 0; ii < data[0].length; ii++)
+		{
+			EEGlist.add(data[0][ii]);
+		}
+		
+		double minimum = 100;
+		int previousPoints = 100; 
+		if(EEGlist.size() > 10000)
+			//Needs to wait a few seconds for the eeg to even out, it starts out really low 
+		{ 
+			for(int ii = EEGlist.size() - previousPoints; ii < EEGlist.size(); ii++)
+			{
+				if(EEGlist.get(ii) < minimum)
+				{
+					minimum = EEGlist.get(ii);
+				}
+			}
+		}
+		
+		double threshold = -1006; 
+		
+		if(minimum < threshold)
+		{
+			//Clicking
+			if(clickState == false)
+			{
+				//Dow
+				leftButtonDown();
+				clickState = true; 
+			}
+		}
+		else if(minimum > threshold * .8)
+		{
+			if(clickState == true)
+			{
+				rightButtonUp(); 
+				clickState = false; 
+			}
+		}
+		int x = 0; 
 	}
 
+	
+	private int previousPointCount;
+	private ArrayList<Float> Xlist; 
+	private ArrayList<Float> Ylist;
+	private ArrayList<Float> Zlist; 
+	private ArrayList<Float> allList;
+	
+	int prevX; 
+	int prevY;
+	float currX; 
+	float currY; 
+	
+	double xAvg; 
+	double yAvg; 
+	double zAvg;
+	
+	int lastSent; 
+	
 	@Override
 	public void onRawACCData(float[][] data, int index) {
-		// TODO Auto-generated method stub
 		
+	   Ylist.add(data[2][0]);
+	   Zlist.add(data[0][0]);
+	   
+	   Xlist.add(data[1][0]);
+	   int dataPoints = 4 ; 
+	   xAvg += Xlist.get(Xlist.size()-1);
+	   yAvg += Ylist.get(Ylist.size()-1);
+	   zAvg += Zlist.get(Zlist.size()-1);
+	   
+	   
+	  
+	   if(Xlist.size() > dataPoints)
+	   {
+		   xAvg -= Xlist.get(Xlist.size()-dataPoints);
+		   yAvg -= Ylist.get(Ylist.size()-dataPoints);
+		   zAvg -= Zlist.get(Zlist.size()-dataPoints);
+	   }
+	   
+	   allList.add((float) (xAvg + yAvg + zAvg)); 
+	   
+	   if(Xlist.size() > 5)
+	   {
+		   if(Math.abs(allList.get(allList.size()-1) - allList.get(allList.size()-5))>  15)
+		   {
+			   leftButtonDown();
+			   leftButtonUp();
+			   return; 
+		   }
+	   }
+	   
+		double x = xAvg;
+		double y = yAvg;
+		double z = zAvg;
+		
+		double scalingFactorX = .15; 
+		double scalingFactorY = .15; 
+		
+		double xAngle = x;
+		double zAngle = z + 5;
+
+        currX -= (float) (xAngle * scalingFactorX); //x - this.xHistory;
+		currY -= (float) (zAngle * scalingFactorY); //y - this.yHistory;
+		
+		int xMoveInt = (int) (Math.floor(currX) - prevX); 
+		int yMoveInt = (int) (Math.floor(currY) - prevY);
+	
+		prevX += xMoveInt; 
+		prevY += yMoveInt; 
+
+		if(xMoveInt != 0 || yMoveInt != 0)
+		{
+			this.sendMouseEvent(2, xMoveInt, -yMoveInt);
+		}
 	}
 	
 	protected void alertbox(String title, String mymessage)
